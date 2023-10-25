@@ -24,7 +24,7 @@ jobs:
       - name: Run test suite
         run: |
           pipenv run pytest
-
+          
   format:
     runs-on: ubuntu-latest
     steps:
@@ -53,3 +53,4 @@ jobs:
       - name: Generate coverage report
         run: |
           pipenv run pytest --cov=app
+
